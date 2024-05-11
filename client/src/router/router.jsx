@@ -2,8 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import Search from "../pages/search.jsx";
 import Registration from "../pages/registration.jsx";
 import Authorization from "../pages/authorization.jsx";
-import ApplyPage from "../pages/apply-page.jsx";
+import RequestPage from "../pages/request-page.jsx";
 import Profile from "../pages/profile.jsx";
+import NotVerificate from "../pages/not-verificate.jsx";
 
 export const router = createBrowserRouter([
     {
@@ -23,7 +24,11 @@ export const router = createBrowserRouter([
         element: <Profile />
     },
     {
-        path: "/apply",
-        element: <ApplyPage />
+        path: "/request",
+        element: <RequestPage />
+    },
+    {
+        path: "/not-verificate",
+        element: <NotVerificate />
     }
 ]);
