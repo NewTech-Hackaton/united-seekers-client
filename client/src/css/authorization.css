@@ -1,0 +1,25 @@
+.authorization-body {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.authorization-div-right {
+    width: 32.5vw;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(141, 140, 140));
+}
+
+.authorization-div-center {
+    width: 35vw;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    border-left: 2px solid rgba(217, 217, 217, 1);
+    border-right: 2px solid rgba(217, 217, 217, 1);
+}
+
+.authorization-div-left {
+    width: 32.5vw;
+    height: 100vh;
+    background: linear-gradient(to left, rgb(255, 255, 255), rgb(141, 140, 140));
+}
