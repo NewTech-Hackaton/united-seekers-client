@@ -24,6 +24,8 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 2.75rem;
     background-color: rgb(165, 161, 161);
     padding-left: 2rem;
+    width: 100vw;
+    position: fixed;
 }
 
 .Header-Logo{
