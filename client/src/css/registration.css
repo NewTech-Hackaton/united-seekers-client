@@ -1,0 +1,119 @@
+.registration-div-change {
+    display: flex;
+    justify-content: space-between;
+    width: 27rem;
+}
+
+.registration-body {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter';
+}
+
+.registration-div-right {
+    width: 32vw;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(208, 213, 255, 1));
+}
+
+.registration-div-center {
+    width: 36vw;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration-div-left {
+    width: 32vw;
+    height: 100vh;
+    background: linear-gradient(to left, rgb(255, 255, 255), rgba(208, 213, 255, 1));
+}
+
+.registration-form-top {
+    margin: 2rem 3.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.registration-form-top img {
+    width: 9rem;
+    height: 11rem;
+    margin-bottom: 1rem;
+}
+
+.registration-form-top p {
+    font-size: 20px;
+    line-height: 55px;
+    font-weight: 500;
+    color: rgba(111, 111, 111, 1);
+
+}
+
+.registration-button-submit {
+    width: 27rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    background-color: rgba(157, 168, 255, 1);
+
+}
+
+.registration-form-botom {
+    
+    width: 27rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+    margin-bottom: 2rem;
+    
+}
+
+.registration-form-botom button {
+    width: 13rem;
+    height: 2.5rem;
+    border: 3px solid rgba(0, 0, 0, 1);
+    border-radius: 0.5rem;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+}
+
+.registration-form-botom p {
+    display: flex;
+    align-items: center;
+}
+
+.buttonChois {
+    width: 13rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    background-color: rgba(208, 213, 255, 1);
+    margin: 1rem 0;
+}
+
+.buttonOther {
+    width: 13rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    background-color: rgba(157, 168, 255, 1);
+    margin: 1rem 0;
+}
+
