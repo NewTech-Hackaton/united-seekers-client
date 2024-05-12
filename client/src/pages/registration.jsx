@@ -4,16 +4,23 @@ import { useState } from "react"
 import { useNavigate } from 'react-router-dom'
 import RegistrationOrganization from "../components/registration-organization"
 import RegistrationVolunteer from "../components/registration-volunteer"
+import { registration } from "../api/authApi"
 
 function Registration() {
     const [comp, setComp] = useState('RegistrationVolunteer');
     const [buttonOrg, setButtonOrg] = useState('buttonOther');
     const [buttonVol, setButtonVol] = useState('buttonChois');
-    const [nickname, setNickname] = useState('');
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [canAdd, setCanAdd] = useState(false);
     const navigate = useNavigate();
+
+    const token = localStorage.getItem("token")
+
+    if (token) {
+        navigate("/")
+    }
   
     const handleClick = () => {
         navigate('/auth'); 
@@ -25,7 +32,7 @@ function Registration() {
     };
 
     const handleNicknameChange = (e) => {
-        setNickname(e.target.value);
+        (e.target.value);
     };
 
     const handlePasswordChange = (e) => {
@@ -44,6 +51,15 @@ function Registration() {
         setButtonVol('buttonOther');
     };
 
+    const handleRegistration = async (event) => {
+        event.preventDefault()
+        try {
+            await registration(name, email, password)
+        } catch (error) {
+            throw new Error(`Виникла помилка при парсингу даних: ${error}`)
+        }
+    }
+
     return (
         <div className="registration-body">
             <div className="registration-div-left"></div>
@@ -55,7 +71,7 @@ function Registration() {
                         <button onClick={changeToOrg} className={buttonOrg}>Організація</button>
                         <button onClick={changeToVol} className={buttonVol}>Волонтер</button>
                     </div>
-                    <form>
+                    <form onSubmit={handleRegistration}>
                         {comp === 'RegistrationOrganization' ? (
                             <RegistrationOrganization
                                 handleEmailChange={handleEmailChange}

@@ -2,9 +2,9 @@ import authApi from "../api/authApi.js";
 import AuthApi from "../api/authApi.js";
 
 
-export const registration = async (registrationData) => {
+export const registration = async (name, email, password) => {
     try {
-        const response = await AuthApi.registration(registrationData)
+        const response = await AuthApi.registration(name, email, password)
         localStorage.setItem("token", response.data.token)
         return response.data
     } catch (error) {
@@ -12,7 +12,7 @@ export const registration = async (registrationData) => {
     }
 }
 
-export const login = async (loginData) => {
+export const login = async (email, password) => {
     try {
         const response = await AuthApi.login(loginData)
         localStorage.setItem("token", response.data.token)
