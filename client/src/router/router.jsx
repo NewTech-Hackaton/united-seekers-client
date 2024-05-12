@@ -5,6 +5,7 @@ import Authorization from "../pages/authorization.jsx";
 import RequestPage from "../pages/request-page.jsx";
 import Profile from "../pages/profile.jsx";
 import NotVerificate from "../pages/not-verificate.jsx";
+import Details from "../pages/details.jsx";
 
 export const router = createBrowserRouter([
     {
@@ -30,5 +31,9 @@ export const router = createBrowserRouter([
     {
         path: "/not-verificate",
         element: <NotVerificate />
+    },
+    {
+        path: "/details/:id",
+        element: <Details />
     }
 ]);
