@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "../components/header";
+import { Link } from 'react-router-dom';
 import "../css/search.css"
 import { getAnnouncements } from "../api/searchApi";
 
@@ -43,9 +44,13 @@ function Search() {
                         <div className="search-title-description">
                             <p id="search-title">{req.title}</p>
                             <p id="search-description">{req.description}</p>
-                            <div className="search-data-location">
-                                <p>{req.lastSeenLocation}</p>
-                                <p>{req.loseDate}</p>
+                            <div className="search-link">
+                                <Link to={`/details/${req.id}`} className="search-ggwp">Деталі</Link>
+                                <div className="search-data-location">
+                                    <p>{req.lastSeeLocation}</p>
+                                    <p>{req.loseDate}</p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
