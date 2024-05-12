@@ -1,0 +1,103 @@
+.authorization-body {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter';
+}
+
+.authorization-div-right {
+    width: 32vw;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(208, 213, 255, 1));
+}
+
+.authorization-div-center {
+    width: 36vw;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authorization-div-left {
+    width: 32vw;
+    height: 100vh;
+    background: linear-gradient(to left, rgb(255, 255, 255), rgba(208, 213, 255, 1));
+}
+
+.authorization-form-top {
+    margin: 2rem 3.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.authorization-form-top img {
+    width: 11.3125rem;
+    height: 13.25rem;
+    margin-bottom: 4rem;
+}
+
+.authorization-form-top input {
+    margin-bottom: 1.125rem;
+    width: 27rem;
+    height: 3rem;
+    border: 1px solid rgba(111, 111, 111, 1);
+    border-radius: 0.5rem;
+    font-size: 20px;
+    line-height: 55px;
+    font-weight: 400;
+    padding-left: 1rem;
+
+}
+
+.authorization-form-top p {
+    font-size: 20px;
+    line-height: 55px;
+    font-weight: 500;
+    color: rgba(111, 111, 111, 1);
+
+}
+
+.authorization-form-top button {
+    margin-top: 1.125rem;
+    width: 27rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 0.5rem;
+    font-size: 22px;
+    line-height: 55px;
+    font-weight: 400;
+    background-color: rgba(0, 41, 255, 0.16);
+
+}
+
+.authorization-form-botom {
+    
+    width: 27rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+    margin-bottom: 2rem;
+    
+}
+
+.authorization-form-botom button {
+    width: 13rem;
+    height: 3rem;
+    border: 3px solid rgba(0, 0, 0, 1);
+    border-radius: 0.5rem;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+}
+
+.authorization-form-botom p {
+    display: flex;
+    align-items: center;
+}
+
