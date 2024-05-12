@@ -1,13 +1,17 @@
 import "../css/Header.css"
-import logo from "../assets/logo-text.png"
+// import logo from "../assets/logo-text.png"
 import search from "../assets/search.png"
 import notification_bell from "../assets/notification-bell.png" 
-import profile_image from "../assets/profile_image.png"
+import profile_image from "../assets/profile-icon.png"
 
 function Header() {
     return (
         <div className="Header-Header">
-        <img className="Header-Logo" src={logo} alt="" />
+        {/* <img className="Header-Logo" src={logo} alt="" /> */}
+        <div className="Header-logo-area">
+        <p>UNITED <br /> seekers</p>
+        </div>
+
         <form action="" className="Header-search-bar">
             <input placeholder="Пошук"  type="search" />
             <button type="submit"> <img className="main-page-search_icon" src={search} alt=""/></button>
